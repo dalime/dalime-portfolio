@@ -1,0 +1,13 @@
+@keyframes moveUp {
+  from {
+    top: 70%;
+  } to {
+    top: 10%;
+  }
+}
+
+.move-up {
+  animation-name: moveUp;
+  animation-duration: 1s;
+  top: 10%;
+}

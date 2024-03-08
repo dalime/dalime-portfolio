@@ -1,0 +1,27 @@
+@keyframes highlightOn {
+  from {
+    border: none;
+  } to {
+    border: 1px solid #FFEB3B;
+  }
+}
+
+@keyframes highlightOff {
+  from {
+    border: 1px solid #FFEB3B;
+  } to {
+    border: none;
+  }
+}
+
+.highlight-on {
+  animation-name: highlightOn;
+  animation-duration: 0.5s;
+  border: 1px solid #FFEB3B;
+}
+
+.highlight-off {
+  animation-name: highlightOff;
+  animation-duration: 0.5s;
+  border: none;
+}

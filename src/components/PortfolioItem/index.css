@@ -1,0 +1,25 @@
+@keyframes highlightImg {
+  from {
+    border: 1px solid #e0e0e0;
+  } to {
+    border: 1px solid #fff076;
+  }
+}
+
+@keyframes unhighlightImg {
+  from {
+    border: 1px solid #fff076;
+  } to {
+    border: 1px solid #e0e0e0;
+  }
+}
+
+.portfolio-item-img {
+  animation: unhighlightImg 1s forwards;
+  border: 1px solid #e0e0e0;
+}
+
+.portfolio-item-img:hover {
+  animation: highlightImg 1s forwards;
+  border: 1px solid #fff076;
+}
