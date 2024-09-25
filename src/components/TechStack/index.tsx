@@ -1,7 +1,7 @@
 import React, { CSSProperties, ReactNode, useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import { SxProps, Button } from "@mui/material";
-import { yellow } from "@mui/material/colors";
+import { blue } from "@mui/material/colors";
 
 // Helpers
 import { navigateToUrl } from "../../helpers";
@@ -145,7 +145,7 @@ function TechStack({ noAction }: Props) {
       onClick={() => navigateToTech(name)}
     >
       <TechImg src={imgSrc} alt={name} />
-      <TechText style={techHovering === name ? { color: yellow[500] } : {}}>
+      <TechText style={techHovering === name ? { color: blue[500] } : {}}>
         {name}
       </TechText>
     </TechWrapper>
@@ -159,9 +159,9 @@ function TechStack({ noAction }: Props) {
         marginBottom: 30,
       }}
     >
-      <SubHead isMobile={isMobile}>Our Specialized Tech Stack</SubHead>
+      <SubHead isMobile={isMobile}>My Specialized Tech Stack</SubHead>
       <Paragraph sx={paragraphSx}>
-        We have a core tech stack in which we specialize, ensuring world-class
+        I have a core tech stack in which I specialize, ensuring world-class
         quality with it.
       </Paragraph>
       <Rows>
@@ -182,7 +182,7 @@ function TechStack({ noAction }: Props) {
         </Column>
       </Rows>
       <Paragraph sx={paragraphSx}>
-        Depending on your project needs, we can adjust the technology stack
+        Depending on your project needs, I can adjust the technology stack
         accordingly.
       </Paragraph>
       {!noAction && (

@@ -8,7 +8,6 @@ import { Typography, Button } from "@mui/material";
 import { Backdrop } from "../../../components";
 
 // Animations
-import designJson from "../../../assets/lottie-jsons/design.json";
 import codingJson from "../../../assets/lottie-jsons/coding.json";
 import copywritingJson from "../../../assets/lottie-jsons/copywriting.json";
 
@@ -45,8 +44,6 @@ function Service({ title, animationName, description }: Props) {
    */
   const pickAnimation = () => {
     switch (animationName) {
-      case "design":
-        return designJson;
       case "development":
         return codingJson;
       case "copywriting":

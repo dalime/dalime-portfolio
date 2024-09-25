@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Typed from "react-typed";
 import { Button } from "@mui/material";
-import { yellow } from "@mui/material/colors";
+import { blue } from "@mui/material/colors";
 
 // Components
 import Step1 from "./Step1";
@@ -148,7 +148,7 @@ function Placeholder({ isMobile }: Props) {
       </Body>
       <Keyboard>
         <Text style={isMobile ? { fontSize: 11 } : {}}>
-          <span style={{ marginLeft: 10, color: yellow[500] }}>{" > "}</span>
+          <span style={{ marginLeft: 10, color: blue[500] }}>{" > "}</span>
           {step === 7 ? (
             <Button
               variant="outlined"
@@ -170,7 +170,7 @@ function Placeholder({ isMobile }: Props) {
                 "implementFeature();",
                 "build();",
                 "publish();",
-                "Sleek App Complete!",
+                "Danny Lim Complete!",
               ]}
               backSpeed={0}
               typeSpeed={40}

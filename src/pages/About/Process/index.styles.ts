@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { yellow } from "@mui/material/colors";
+import { blue } from "@mui/material/colors";
 
 export const Wrapper = styled.div`
   position: relative;
@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid ${yellow[300]};
+  border: 1px solid ${blue[300]};
   width: 50%;
   height: 50%;
   min-height: 500px;

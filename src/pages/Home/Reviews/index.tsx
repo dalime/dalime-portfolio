@@ -89,7 +89,7 @@ function Reviews() {
       }}
     >
       <Subheading sx={isMobile ? { fontSize: 30 } : {}}>
-        What Our Clients Say
+        What My Clients Say
       </Subheading>
       <Slider
         previousButton={SliderButton(true, isMobile)}

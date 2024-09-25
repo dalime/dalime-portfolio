@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { yellow } from "@mui/material/colors";
+import { blue } from "@mui/material/colors";
 
 export const Form = styled.form`
   width: 100%;
@@ -32,7 +32,7 @@ export const Separator = styled.div`
 
 export const Line = styled.hr`
   width: 300px;
-  border: 1px solid ${yellow[500]};
+  border: 1px solid ${blue[500]};
 `;
 
 export const LogoImg = styled.img`

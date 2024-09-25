@@ -31,7 +31,7 @@ import { Subheading, Paragraph } from "../fonts";
 import { Form, Separator, Line, LogoImg, Loader } from "./index.styles";
 
 // Assets
-import SleekAppLogo from "../../assets/images/sleekapp-logo.png";
+import DannyLimLogo from "../../assets/images/dannylim-logo.png";
 
 function ContactForm() {
   // Hooks
@@ -44,7 +44,7 @@ function ContactForm() {
   const [firstName, setFirstName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [service, setService] = useState<
-    "design" | "development" | "copywriting"
+    "development" | "copywriting"
   >("development");
   const [message, setMessage] = useState<string>("");
   const [emailLoading, setEmailLoading] = useState<boolean>(false);
@@ -115,11 +115,11 @@ function ContactForm() {
     >
       <Separator>
         <Line />
-        <LogoImg src={SleekAppLogo} alt="Sleek App" />
+        <LogoImg src={DannyLimLogo} alt="Danny Lim" />
         <Line />
       </Separator>
       <Subheading sx={{ marginBottom: 1, fontSize: isMobile ? 30 : 40 }}>
-        Leave Us A Message
+        Leave Danny A Message
       </Subheading>
       <Form onSubmit={handleSubmit}>
         {emailLoading && (
@@ -160,17 +160,11 @@ function ContactForm() {
             value={service}
             onChange={(e) =>
               setService(
-                e.target.value as "design" | "development" | "copywriting"
+                e.target.value as "development" | "copywriting"
               )
             }
             name="service-group"
           >
-            <FormControlLabel
-              value="design"
-              control={<Radio />}
-              label="Design"
-              disabled={emailLoading}
-            />
             <FormControlLabel
               value="development"
               control={<Radio />}
@@ -211,7 +205,7 @@ function ContactForm() {
         </Button>
       </Form>
       <Paragraph sx={{ textAlign: "center", marginTop: 3 }}>
-        We'll get back to you shortly.
+        I'll get back to you shortly.
       </Paragraph>
       {!recoilSnackBar && emailSuccess && !errorAlert && (
         <Snackbar

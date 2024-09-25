@@ -40,7 +40,7 @@ function CTASection() {
         className="pulse"
         startIcon={<Paid fontSize="large" />}
       >
-        Turn Money Printer On
+        Develop Your App
       </Button>
     </Section>
   );

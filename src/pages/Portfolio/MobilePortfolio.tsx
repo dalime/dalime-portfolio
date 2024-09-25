@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { List, Button } from "@mui/material";
 import { Close } from "@mui/icons-material";
-import { yellow } from "@mui/material/colors";
+import { blue } from "@mui/material/colors";
 
 // Types
 import { PortfolioItemInterface } from "../../types";
@@ -118,7 +118,7 @@ function MobilePortfolio() {
           style={{
             marginBottom: 10,
             fontSize: 26,
-            color: yellow[300],
+            color: blue[300],
           }}
         >
           Portfolio

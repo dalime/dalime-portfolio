@@ -128,7 +128,7 @@ function Step7({ deviceHeight }: BaseProps) {
                 : {}
             }
           >
-            Turn Money Printer On
+            Develop Your App
           </Button>
         </div>
       )}

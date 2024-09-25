@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import { useMediaQuery } from "react-responsive";
 import { List, Button } from "@mui/material";
 import { Close, Web, Code } from "@mui/icons-material";
-import { yellow } from "@mui/material/colors";
+import { blue } from "@mui/material/colors";
 
 // Types
 import { PortfolioItemInterface } from "../../types";
@@ -90,26 +90,26 @@ function Portfolio() {
     <Page>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Portfolio - Sleek App</title>
+        <title>Portfolio - Danny Lim</title>
         <meta
           name="description"
-          content="Sleek App's web development portfolio of applicable work. You can find recent case studies of how we handled problems and approached solutions for clients."
+          content="Danny Lim's web development portfolio of applicable work. You can find recent case studies of how I handled problems and approached solutions for clients."
         />
         <meta name="robots" content="max-image-preview:large" />
-        <link rel="canonical" href="https://sleekapp.io/portfolio/" />
+        <link rel="canonical" href="https://dannylim.io/portfolio/" />
         <meta name="generator" content="All in One SEO (AIOSEO) 4.3.6.1 " />
         <meta property="og:locale" content="en_US" />
         <meta
           property="og:site_name"
-          content="Sleek App - Turning visions into reality"
+          content="Danny Lim - Senior Developer & Technical Product Manager"
         />
         <meta property="og:type" content="article" />
-        <meta property="og:title" content="Portfolio - Sleek App" />
+        <meta property="og:title" content="Portfolio - Danny Lim" />
         <meta
           property="og:description"
-          content="Sleek App's web development portfolio of applicable work. You can find recent case studies of how we handled problems and approached solutions for clients."
+          content="Danny Lim's web development portfolio of applicable work. You can find recent case studies of how I handled problems and approached solutions for clients."
         />
-        <meta property="og:url" content="https://sleekapp.io/portfolio/" />
+        <meta property="og:url" content="https://dannylim.io/portfolio/" />
         <meta property="og:image" content={portfolioPageImg} />
         <meta property="og:image:secure_url" content={portfolioPageImg} />
         <meta
@@ -121,10 +121,10 @@ function Portfolio() {
           content="2023-10-11T10:15:57+00:00"
         />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Portfolio - Sleek App" />
+        <meta name="twitter:title" content="Portfolio - Danny Lim" />
         <meta
           name="twitter:description"
-          content="Sleek App's web development portfolio of applicable work. You can find recent case studies of how we handled problems and approached solutions for clients."
+          content="Danny Lim's web development portfolio of applicable work. You can find recent case studies of how I handled problems and approached solutions for clients."
         />
         <meta name="twitter:image" content={portfolioPageImg} />
       </Helmet>
@@ -135,7 +135,7 @@ function Portfolio() {
           style={{
             marginBottom: 20,
             fontSize: isMobile ? 30 : 50,
-            color: yellow[300],
+            color: blue[300],
           }}
         >
           Portfolio

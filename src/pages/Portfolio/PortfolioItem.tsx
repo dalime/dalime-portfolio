@@ -1,7 +1,7 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
 import { ListItem, ListItemAvatar, ListItemText, Avatar } from "@mui/material";
-import { Code, BrushTwoTone, Keyboard } from "@mui/icons-material";
+import { Code, Keyboard } from "@mui/icons-material";
 
 // Types
 import { PortfolioItemInterface } from "../../types";
@@ -29,13 +29,12 @@ function PortfolioItem({
   const { title, description, role } = portfolioItem;
 
   /**
-   * Renders the correct icon based on what the role of Sleek App was for the project
+   * Renders the correct icon based on the role Danny Lim fulfilled for the project
    * @param role string
    * @returns JSX.Element
    */
   const renderRoleIcon = (role: string): JSX.Element => {
     if (role.toLowerCase().includes("developer")) return <Code />;
-    if (role.toLowerCase().includes("design")) return <BrushTwoTone />;
     if (
       role.toLowerCase().includes("writing") ||
       role.toLowerCase().includes("writer")

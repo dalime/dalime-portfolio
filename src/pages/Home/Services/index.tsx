@@ -25,14 +25,9 @@ function Services() {
       }}
     >
       <Subheading sx={isMobile ? { fontSize: 30 } : {}}>
-        A Comprehensive Development Agency
+        Senior Developer & Technical Product Manager
       </Subheading>
       <Wrapper style={{ flexDirection: isSmallScreen ? "column" : "row" }}>
-        <Service
-          title="Design"
-          animationName="design"
-          description="App and website designs that combine creativity and user-centric principles"
-        />
         <Service
           title="Development"
           animationName="development"

@@ -3,14 +3,14 @@ import { Helmet } from "react-helmet";
 import { useMediaQuery } from "react-responsive";
 import { CircularProgress, IconButton, Alert } from "@mui/material";
 import { Close } from "@mui/icons-material";
-import { yellow } from "@mui/material/colors";
+import { blue } from "@mui/material/colors";
 
 // Types
 import { WPPost } from "../../types";
 import { AuthorInformation } from "./types";
 
 // Actions
-import { fetchAgencyPosts, fetchTeamPosts } from "../../actions";
+import { fetchPosts } from "../../actions";
 
 // Components
 import PostPreview from "./PostPreview";
@@ -21,7 +21,7 @@ import { Page, MainHeading, Subheading } from "../../components";
 import { PreviewsList, ErrorWrapper } from "./index.styles";
 
 // Assets
-import sleekAppLogo from "../../assets/images/sleekapp-logo.png";
+import DannyLimLogo from "../../assets/images/dannylim-logo.png";
 import DannyAvatarImg from "../../assets/images/team/danny-avatar.png";
 
 interface WPPostWithAuthor extends WPPost {
@@ -33,8 +33,7 @@ function Blog() {
   const mobile = useMediaQuery({ maxWidth: 768 });
 
   // State
-  const [agencyPosts, setAgencyPosts] = useState<WPPost[]>([]);
-  const [teamPosts, setTeamPosts] = useState<WPPost[]>([]);
+  const [blogPosts, setBlogPosts] = useState<WPPost[]>([]);
   const [fetchLoading, setFetchLoading] = useState<boolean>(false);
   const [fetchError, setFetchError] = useState<string | null>(null);
   const [activePost, setActivePost] = useState<WPPostWithAuthor | null>(null);
@@ -43,11 +42,9 @@ function Blog() {
     const fetchBlogPosts = async () => {
       try {
         setFetchLoading(true);
-        const agencyResponse = await fetchAgencyPosts();
-        const teamResponse = await fetchTeamPosts();
+        const postsResponse = await fetchPosts();
         setFetchLoading(false);
-        setAgencyPosts(agencyResponse || []);
-        setTeamPosts(teamResponse || []);
+        setBlogPosts(postsResponse || []);
       } catch (error) {
         setFetchLoading(false);
         setFetchError("Could not fetch blog posts");
@@ -57,29 +54,11 @@ function Blog() {
     fetchBlogPosts();
   }, []);
 
-  const renderAgencyBlogPosts = (): JSX.Element[] => {
-    if (!agencyPosts) return [];
 
-    return agencyPosts.map((blogPost: WPPost) => {
-      const blogPostWithAuthor: WPPostWithAuthor = {
-        ...blogPost,
-        authorInfo: null,
-      };
-      return (
-        <PostPreview
-          key={`agency-blog-post-preview-${blogPost.id}`}
-          postDetails={blogPost}
-          setActive={() => setActivePost(blogPostWithAuthor)}
-          mobile={mobile}
-        />
-      );
-    });
-  };
+  const renderBlogPosts = (): JSX.Element[] => {
+    if (!blogPosts) return [];
 
-  const renderTeamBlogPosts = (): JSX.Element[] => {
-    if (!teamPosts) return [];
-
-    return teamPosts.map((blogPost: WPPost) => {
+    return blogPosts.map((blogPost: WPPost) => {
       const authorInfo: AuthorInformation = {
         name: "Danny Lim",
         profileImg: DannyAvatarImg,
@@ -108,11 +87,11 @@ function Blog() {
       />
     );
 
-  const headingColor = { color: yellow[300] };
+  const headingColor = { color: blue[300] };
 
   const marginTopStyle = { marginTop: 3 };
 
-  const renderBlogPosts = (agency: boolean): JSX.Element => {
+  const renderBlogSection = (): JSX.Element => {
     return fetchError ? (
       <ErrorWrapper mobile={mobile || false}>
         <Alert
@@ -123,7 +102,7 @@ function Blog() {
               color="inherit"
               size="small"
               onClick={() => {
-                agency ? setFetchError(null) : setFetchError(null);
+                setFetchError(null);
               }}
             >
               <Close fontSize="inherit" />
@@ -133,7 +112,7 @@ function Blog() {
           {fetchError}
         </Alert>
       </ErrorWrapper>
-    ) : (agency ? agencyPosts.length : teamPosts.length) ? (
+    ) : (blogPosts.length) ? (
       <>
         <Subheading
           sx={
@@ -147,10 +126,10 @@ function Blog() {
               : marginTopStyle
           }
         >
-          {agency ? "By Sleek App" : "By Our Team Members"}
+          By Danny Lim
         </Subheading>
         <PreviewsList>
-          {agency ? renderAgencyBlogPosts() : renderTeamBlogPosts()}
+          {renderBlogPosts()}
         </PreviewsList>
       </>
     ) : (
@@ -162,31 +141,30 @@ function Blog() {
     <Page>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Agency Blog - Sleek App</title>
+        <title>Blog - Danny Lim</title>
         <meta
           name="description"
-          content="Sleek App's agency blog that talks about trends in multiple industries, best practices, and new solutions to emerging problems."
+          content="Danny Lim's blog that talks about trends in multiple industries, best practices, and new solutions to emerging problems."
         />
         <meta name="robots" content="max-image-preview:large" />
-        <link rel="canonical" href="https://sleekapp.io/blog/" />
+        <link rel="canonical" href="https://dannylim.io/blog/" />
         <meta name="generator" content="All in One SEO (AIOSEO) 4.3.6.1 " />
         <meta property="og:locale" content="en_US" />
         <meta
           property="og:site_name"
-          content="Sleek App - Turning visions into reality"
+          content="Danny Lim - Senior Developer & Technical Product Manager"
         />
         <meta property="og:type" content="article" />
-        <meta property="og:title" content="Agency Blog - Sleek App" />
+        <meta property="og:title" content="Blog - Danny Lim" />
         <meta
           property="og:description"
-          content="Sleek App's agency blog that talks about trends in multiple industries, best practices, and new solutions to emerging problems."
+          content="Danny Lim's blog that talks about trends in multiple industries, best practices, and new solutions to emerging problems."
         />
-        <meta property="og:url" content="https://sleekapp.io/blog/" />
-        <meta property="og:image" content={sleekAppLogo} />
-        <meta property="og:image:secure_url" content={sleekAppLogo} />
+        <meta property="og:url" content="https://dannylim.io/blog/" />
+        <meta property="og:image" content={DannyLimLogo} />
+        <meta property="og:image:secure_url" content={DannyLimLogo} />
         <meta property="og:image:width" content="512" />
         <meta property="og:image:height" content="512" />
-        <meta property="article:tag" content="agency blog" />
         <meta property="article:tag" content="blog" />
         <meta property="article:tag" content="developer blog" />
         <meta
@@ -198,12 +176,12 @@ function Blog() {
           content="2023-08-08T18:11:51+00:00"
         />
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="Agency Blog - Sleek App" />
+        <meta name="twitter:title" content="Blog - Danny Lim" />
         <meta
           name="twitter:description"
-          content="Sleek App's agency blog that talks about trends in multiple industries, best practices, and new solutions to emerging problems."
+          content="Danny Lim's blog that talks about trends in multiple industries, best practices, and new solutions to emerging problems."
         />
-        <meta name="twitter:image" content={sleekAppLogo} />
+        <meta name="twitter:image" content={DannyLimLogo} />
       </Helmet>
 
       <MainHeading
@@ -218,8 +196,7 @@ function Blog() {
         </div>
       ) : (
         <>
-          {renderBlogPosts(true)}
-          {renderBlogPosts(false)}
+          {renderBlogSection()}
         </>
       )}
     </Page>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@mui/material";
-import { yellow } from "@mui/material/colors";
+import { blue } from "@mui/material/colors";
 
 // Types
 import { AuthorInformation } from "./types";
@@ -39,7 +39,7 @@ function AuthorInfo({ info, isMobile, isTablet }: Props) {
             : { fontSize: 24 }
         }
       >
-        By <span style={{ color: yellow[500] }}>{info.name}</span>
+        By <span style={{ color: blue[500] }}>{info.name}</span>
       </Subheading>
       <Button
         variant="text"

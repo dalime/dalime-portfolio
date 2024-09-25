@@ -1,7 +1,7 @@
 import React from "react";
 import Typed from "react-typed";
 import { Button, Typography } from "@mui/material";
-import { yellow } from "@mui/material/colors";
+import { blue } from "@mui/material/colors";
 
 // Helpers
 import { navigateToUrl } from "../../../helpers";
@@ -22,7 +22,7 @@ function HeroText({ mobile }: Props) {
           textAlign: mobile ? "center" : "left",
         }}
       >
-        Sleek App <span style={{ color: yellow[200] }}>Development Agency</span>
+        <span style={{ color: blue[200] }}>Danny Lim</span>
       </Typography>
       <Typography
         variant="h2"
@@ -34,7 +34,7 @@ function HeroText({ mobile }: Props) {
         }}
       >
         <Typed
-          strings={["Let's Bring Your Vision to Life"]}
+          strings={["Senior Developer + Product Manager"]}
           typeSpeed={40}
           style={{ textAlign: mobile ? "center" : "left" }}
         />
@@ -47,9 +47,7 @@ function HeroText({ mobile }: Props) {
           textAlign: mobile ? "center" : "left",
         }}
       >
-        {mobile
-          ? "We turn visions into reality."
-          : "A One-Stop-Shop App Development Agency. We turn visions into reality."}
+        I turn visions into reality
       </Typography>
       <Button
         variant="contained"
@@ -60,7 +58,7 @@ function HeroText({ mobile }: Props) {
             : {}
         }
       >
-        Turn Money Printer On
+        Develop Your App
       </Button>
     </>
   );

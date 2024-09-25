@@ -9,7 +9,7 @@ import { Wrapper, RightSide, LeftSide, LogoImg } from "./index.styles";
 import "./index.css";
 
 // Images
-import SleekAppLogo from "../../assets/images/sleekapp-logo.png";
+import DannyLimLogo from "../../assets/images/dannylim-logo.png";
 import MobileMenu from "../MobileMenu";
 
 interface Props {
@@ -22,7 +22,7 @@ function HeaderMenu({ opacity }: Props) {
   const HeaderMenuBody: JSX.Element = (
     <>
       <LeftSide>
-        <LogoImg src={SleekAppLogo} alt="Sleek App" />
+        <LogoImg src={DannyLimLogo} alt="Danny Lim" />
       </LeftSide>
       <RightSide>
         <CustomMenuItem text="Home" route="/" />

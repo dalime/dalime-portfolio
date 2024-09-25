@@ -2,13 +2,13 @@
   from {
     border: none;
   } to {
-    border: 1px solid #FFEB3B;
+    border: 1px solid #2196f3;
   }
 }
 
 @keyframes highlightOff {
   from {
-    border: 1px solid #FFEB3B;
+    border: 1px solid #2196f3;
   } to {
     border: none;
   }
@@ -17,7 +17,7 @@
 .highlight-on {
   animation-name: highlightOn;
   animation-duration: 0.5s;
-  border: 1px solid #FFEB3B;
+  border: 1px solid #2196f3;
 }
 
 .highlight-off {

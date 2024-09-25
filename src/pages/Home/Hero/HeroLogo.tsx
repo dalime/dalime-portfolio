@@ -2,7 +2,7 @@ import React from "react";
 import { animated, useSpring } from "@react-spring/web";
 
 // Images
-import SleekAppLogo from "../../../assets/images/sleekapp-logo.png";
+import DannyLimLogo from "../../../assets/images/dannylim-logo.png";
 
 interface Props {
   mobile?: boolean;
@@ -23,8 +23,8 @@ function HeroLogo({ mobile }: Props) {
 
   return (
     <animated.img
-      src={SleekAppLogo}
-      alt="Sleek App"
+      src={DannyLimLogo}
+      alt="Danny Lim"
       width={mobile ? 200 : 300}
       style={{
         width: mobile ? 200 : 300,
