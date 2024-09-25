@@ -16,13 +16,13 @@ import { Rows, Column, TechWrapper, TechText, TechImg } from "./index.styles";
 // Assets
 import reactIcon from "../../assets/images/techstack/react-icon.png";
 import nodeIcon from "../../assets/images/techstack/nodejs-icon.png";
-import awsS3Icon from "../../assets/images/techstack/aws-s3-icon.png";
+import solidityIcon from "../../assets/images/techstack/solidity-icon.png";
 import graphQlIcon from "../../assets/images/techstack/graphql-icon.png";
 import mongoDbIcon from "../../assets/images/techstack/mongodb-icon.png";
-import awsEc2Icon from "../../assets/images/techstack/aws-ec2-icon.png";
+import shopifyIcon from "../../assets/images/techstack/shopify-icon.png";
 import typescriptIcon from "../../assets/images/techstack/typescript-logo.png";
 import postgresQlIcon from "../../assets/images/techstack/postgresql-icon.png";
-import awsEcsIcon from "../../assets/images/techstack/aws-ecs-icon.png";
+import awsIcon from "../../assets/images/techstack/aws-icon.png";
 
 interface SubHeadProps {
   isMobile: boolean;
@@ -111,20 +111,20 @@ function TechStack({ noAction }: Props) {
       case "Node.js":
         url = "https://nodejs.org/en";
         break;
+      case "Solidity":
+        url = "https://soliditylang.org/";
+        break;
+      case "Shopify":
+        url = "https://shopify.com/";
+        break;
       case "MongoDB":
         url = "https://www.mongodb.com/";
         break;
       case "PostgreSQL":
         url = "https://www.postgresql.org/";
         break;
-      case "AWS S3":
-        url = "https://aws.amazon.com/s3/";
-        break;
-      case "AWS EC2":
-        url = "https://aws.amazon.com/ec2";
-        break;
-      case "AWS ECS":
-        url = "https://aws.amazon.com/ecs";
+      case "AWS":
+        url = "https://aws.amazon.com/";
         break;
       default:
         break;
@@ -167,18 +167,18 @@ function TechStack({ noAction }: Props) {
       <Rows>
         <Column>
           {renderTech(reactIcon, "React")}
+          {renderTech(solidityIcon, "Solidity")}
           {renderTech(nodeIcon, "Node.js")}
-          {renderTech(awsS3Icon, "AWS S3")}
         </Column>
         <Column>
           {renderTech(graphQlIcon, "GraphQL")}
+          {renderTech(shopifyIcon, "Shopify")}
           {renderTech(mongoDbIcon, "Mongo DB")}
-          {renderTech(awsEc2Icon, "AWS EC2")}
         </Column>
         <Column>
           {renderTech(typescriptIcon, "Typescript")}
           {renderTech(postgresQlIcon, "PostgreSQL")}
-          {renderTech(awsEcsIcon, "AWS ECS")}
+          {renderTech(awsIcon, "AWS")}
         </Column>
       </Rows>
       <Paragraph sx={paragraphSx}>
