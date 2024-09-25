@@ -1,5 +1,9 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
+import { Button } from "@mui/material";
+
+// Helpers
+import { navigateToUrl } from "../../helpers";
 
 // Components
 import CustomMenuItem from "./CustomMenuItem";
@@ -22,7 +26,9 @@ function HeaderMenu({ opacity }: Props) {
   const HeaderMenuBody: JSX.Element = (
     <>
       <LeftSide>
-        <LogoImg src={DannyLimLogo} alt="Danny Lim" />
+        <Button variant="text" onClick={() => navigateToUrl("/", true)}>
+          <LogoImg src={DannyLimLogo} alt="Danny Lim" />
+        </Button>
       </LeftSide>
       <RightSide>
         <CustomMenuItem text="Home" route="/" />
