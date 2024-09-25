@@ -33,14 +33,14 @@ function Footer() {
     {
       name: "Email",
       action: () =>
-        (window.location.href = `mailto:admin@dannylim.io?subject=${encodeURIComponent(
+        (window.location.href = `mailto:support@sleekapp.io?subject=${encodeURIComponent(
           "New Inquiry"
         )}`),
       icon: <Email />,
     },
     {
       name: "LinkedIn",
-      action: () => navigateToUrl("https://linkedin.com/company/sleek-app-llc"),
+      action: () => navigateToUrl("https://linkedin.com/in/dalime"),
       icon: <LinkedIn />,
     },
     {
