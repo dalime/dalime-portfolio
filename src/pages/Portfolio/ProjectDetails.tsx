@@ -122,7 +122,7 @@ function ProjectDetails({ project, isMobile }: Props) {
         <>
           <SubHeading isMobile={isMobile || false}>Feedback</SubHeading>
           <StarRating rating={5} />
-          <BodyText isMobile={isMobile || false}>{feedback}</BodyText>
+          <BodyText isMobile={isMobile || false}>"{feedback}"</BodyText>
         </>
       )}
       {codeLink ||
