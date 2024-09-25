@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import { Button } from "@mui/material";
-import { RemoveRedEye, Code, Download } from "@mui/icons-material";
+import { RemoveRedEye, Code, Call } from "@mui/icons-material";
 
 // Types
 import { PortfolioItemInterface } from "../../types";
@@ -68,7 +68,7 @@ function PreviewOverlay({ project }: Props) {
               : {}
           }
         >
-          <Download style={{ marginRight: 5 }} />
+          <Call style={{ marginRight: 5 }} />
           Get Your Own
         </Button>
       </PreviewActions>

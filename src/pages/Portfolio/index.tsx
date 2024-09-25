@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import { useMediaQuery } from "react-responsive";
 import { List, Button } from "@mui/material";
-import { Close, Web, Code } from "@mui/icons-material";
+import { Close, RemoveRedEye, Code } from "@mui/icons-material";
 import { blue } from "@mui/material/colors";
 
 // Types
@@ -181,7 +181,7 @@ function Portfolio() {
                             : {}
                         }
                       >
-                        <Web style={{ marginRight: 5 }} />
+                        <RemoveRedEye style={{ marginRight: 5 }} />
                         View
                       </Button>
                     )}

@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
 import { Button, ButtonGroup } from "@mui/material";
-import { Code, Web, Call } from "@mui/icons-material";
+import { Code, RemoveRedEye, Call } from "@mui/icons-material";
 import { blue, grey } from "@mui/material/colors";
 
 // Types
@@ -148,7 +148,7 @@ function ProjectDetails({ project, isMobile }: Props) {
                   onClick={() => navigateToUrl(viewLink)}
                   sx={isMobile ? { fontSize: 12 } : {}}
                 >
-                  <Web sx={{ marginRight: 2 }} />
+                  <RemoveRedEye sx={{ marginRight: 2 }} />
                   View Project
                 </Button>
               )}
