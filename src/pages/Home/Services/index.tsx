@@ -34,9 +34,9 @@ function Services() {
           description="Customized apps and websites that lead to business growth"
         />
         <Service
-          title="Copywriting"
-          animationName="copywriting"
-          description="Compelling copywriting services that converts visitors to customers"
+          title="Product Management"
+          animationName="product management"
+          description="Technical product management to bring your project forward"
         />
       </Wrapper>
     </Section>

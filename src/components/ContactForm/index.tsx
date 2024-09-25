@@ -44,7 +44,7 @@ function ContactForm() {
   const [firstName, setFirstName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [service, setService] = useState<
-    "development" | "copywriting"
+    "development" | "product management"
   >("development");
   const [message, setMessage] = useState<string>("");
   const [emailLoading, setEmailLoading] = useState<boolean>(false);
@@ -160,7 +160,7 @@ function ContactForm() {
             value={service}
             onChange={(e) =>
               setService(
-                e.target.value as "development" | "copywriting"
+                e.target.value as "development" | "product management"
               )
             }
             name="service-group"
@@ -172,9 +172,9 @@ function ContactForm() {
               disabled={emailLoading}
             />
             <FormControlLabel
-              value="copywriting"
+              value="product management"
               control={<Radio />}
-              label="Copywriting"
+              label="Product Management"
               disabled={emailLoading}
             />
           </RadioGroup>
