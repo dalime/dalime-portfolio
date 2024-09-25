@@ -8,9 +8,8 @@ import { Typography, Button } from "@mui/material";
 import { Backdrop } from "../../../components";
 
 // Animations
-import designJson from "../../../assets/lottie-jsons/design.json";
 import codingJson from "../../../assets/lottie-jsons/coding.json";
-import copywritingJson from "../../../assets/lottie-jsons/copywriting.json";
+import projectMgmtJson from "../../../assets/lottie-jsons/project-mgmt-board.json";
 
 interface Props {
   title: string;
@@ -45,12 +44,10 @@ function Service({ title, animationName, description }: Props) {
    */
   const pickAnimation = () => {
     switch (animationName) {
-      case "design":
-        return designJson;
       case "development":
         return codingJson;
-      case "copywriting":
-        return copywritingJson;
+      case "product management":
+        return projectMgmtJson;
       default:
         return null;
     }
@@ -95,7 +92,7 @@ function Service({ title, animationName, description }: Props) {
       <Typography
         variant="h3"
         color="primary"
-        sx={{ marginTop: 2, marginBottom: 2, fontSize: 30, fontWeight: 500 }}
+        sx={{ marginTop: 2, marginBottom: 2, fontSize: 30, fontWeight: 500, textAlign: 'center' }}
       >
         {title}
       </Typography>

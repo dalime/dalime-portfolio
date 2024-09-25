@@ -2,7 +2,7 @@ import React from "react";
 import { RecoilRoot } from "recoil";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-import { grey, yellow } from "@mui/material/colors";
+import { grey, blue } from "@mui/material/colors";
 import CssBaseline from "@mui/material/CssBaseline";
 
 // Pages
@@ -19,7 +19,7 @@ const darkTheme = createTheme({
   palette: {
     mode: "dark",
     primary: {
-      main: yellow[300],
+      main: blue[300],
     },
     secondary: {
       main: grey[400],

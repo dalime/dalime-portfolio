@@ -14,7 +14,7 @@ import { Paragraph } from "../fonts";
 import { Wrapper, SocialMediaIcons, LogoImg } from "./index.styles";
 
 // Assets
-import SleekAppLogo from "../../assets/images/sleekapp-logo.png";
+import DannyLimLogo from "../../assets/images/dannylim-logo.png";
 
 interface SocialMediaLink {
   name: string;
@@ -33,7 +33,7 @@ function Footer() {
     {
       name: "Email",
       action: () =>
-        (window.location.href = `mailto:admin@sleekapp.io?subject=${encodeURIComponent(
+        (window.location.href = `mailto:admin@dannylim.io?subject=${encodeURIComponent(
           "New Inquiry"
         )}`),
       icon: <Email />,
@@ -73,7 +73,7 @@ function Footer() {
           marginBottom: 20,
         }}
       >
-        <LogoImg src={SleekAppLogo} alt="Sleek App" />
+        <LogoImg src={DannyLimLogo} alt="Danny Lim" />
         <Paragraph
           sx={{
             color: grey[600],

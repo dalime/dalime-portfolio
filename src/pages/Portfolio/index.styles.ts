@@ -35,7 +35,7 @@ export const PreviewWrapper = styled.div`
   width: 100%;
   height: 100%;
   position: relative;
-  border: 1px solid #FFEB3B;
+  border: 1px solid #2196f3;
   border-radius: 8px;
   overflow: hidden;
 `;

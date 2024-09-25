@@ -2,7 +2,7 @@ import React, { CSSProperties, ReactNode, useState } from "react";
 import { Helmet } from "react-helmet";
 import { useMediaQuery } from "react-responsive";
 import { Button, SxProps } from "@mui/material";
-import { yellow } from "@mui/material/colors";
+import { blue } from "@mui/material/colors";
 
 // Helpers
 import { navigateToUrl } from "../../helpers";
@@ -23,7 +23,7 @@ import {
 import { TeamMemberImg } from "./index.styles";
 
 // Assets
-import aboutPageImg from "../../assets/images/pages/sleekapp-about-page.png";
+import aboutPageImg from "../../assets/images/pages/dannylim-about-page.png";
 import dannyAvatarImg from "../../assets/images/team/danny-avatar.png";
 import dannyAvatarBwImg from "../../assets/images/team/danny-avatar-bw.png";
 
@@ -75,7 +75,7 @@ function About() {
   const [imgHovering, setImgHovering] = useState<boolean>(false);
 
   // Style
-  const mainStyle: CSSProperties = { color: yellow[300], textAlign: "center" };
+  const mainStyle: CSSProperties = { color: blue[300], textAlign: "center" };
   const paddingSide = {
     paddingLeft: "10%",
     paddingRight: "10%",
@@ -98,29 +98,29 @@ function About() {
     <Page>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>About Sleek App - App Development Agency</title>
+        <title>About Danny Lim - Senior Developer & Technical Product Manager</title>
         <meta
           name="description"
-          content="Sleek App Development Agency was born out of a desire to deliver high quality web and mobile apps for clients who want to provide real value to customers."
+          content="Danny Lim delivers high quality web and mobile apps for clients who want to provide real value to customers."
         />
         <meta name="robots" content="max-image-preview:large" />
-        <link rel="canonical" href="https://sleekapp.io/about/" />
+        <link rel="canonical" href="https://dannylim.io/about/" />
         <meta name="generator" content="All in One SEO (AIOSEO) 4.3.6.1 " />
         <meta property="og:locale" content="en_US" />
         <meta
           property="og:site_name"
-          content="Sleek App - Turning visions into reality"
+          content="Danny Lim - Senior Developer & Technical Product Manager"
         />
         <meta property="og:type" content="article" />
         <meta
           property="og:title"
-          content="About Sleek App - App Development Agency"
+          content="About Danny Lim"
         />
         <meta
           property="og:description"
-          content="Sleek App Development Agency was born out of a desire to deliver high quality web and mobile apps for clients who want to provide real value to customers."
+          content="Danny Lim delivers high quality web and mobile apps for clients who want to provide real value to customers."
         />
-        <meta property="og:url" content="https://sleekapp.io/about/" />
+        <meta property="og:url" content="https://dannylim.io/about/" />
         <meta property="og:image" content={aboutPageImg} />
         <meta property="og:image:secure_url" content={aboutPageImg} />
         <meta
@@ -134,11 +134,11 @@ function About() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="About Sleek App – App Development Agency"
+          content="About Danny Lim"
         />
         <meta
           name="twitter:description"
-          content="Sleek App Development Agency was born out of a desire to deliver high quality web and mobile apps for clients who want to provide real value to customers."
+          content="Danny Lim delivers high quality web and mobile apps for clients who want to provide real value to customers."
         />
         <meta name="twitter:image" content={aboutPageImg} />
       </Helmet>
@@ -166,7 +166,7 @@ function About() {
             : "25%",
         }}
       >
-        Sleek App was born out of a desire to deliver high quality web and
+        Danny Lim delivers high quality web and
         mobile apps for clients who want to create real value-providing products
         for customers.
       </Paragraph>
@@ -189,7 +189,7 @@ function About() {
         >
           <TeamMemberImg
             src={imgHovering ? dannyAvatarImg : dannyAvatarBwImg}
-            alt="Sleek App President"
+            alt="Danny Lim"
             onMouseEnter={() => setImgHovering(true)}
             onMouseLeave={() => setImgHovering(false)}
           />
@@ -198,7 +198,7 @@ function About() {
           “There is nothing more fulfilling than watching clients&apos; visions
           become a reality”
         </Paragraph>
-        <Paragraph>- Danny Lim, President</Paragraph>
+        <Paragraph>- Danny Lim</Paragraph>
         <Button
           className="pulse"
           variant="contained"

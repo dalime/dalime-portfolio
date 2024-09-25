@@ -1,5 +1,9 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
+import { Button } from "@mui/material";
+
+// Helpers
+import { navigateToUrl } from "../../helpers";
 
 // Components
 import CustomMenuItem from "./CustomMenuItem";
@@ -9,7 +13,7 @@ import { Wrapper, RightSide, LeftSide, LogoImg } from "./index.styles";
 import "./index.css";
 
 // Images
-import SleekAppLogo from "../../assets/images/sleekapp-logo.png";
+import DannyLimLogo from "../../assets/images/dannylim-logo.png";
 import MobileMenu from "../MobileMenu";
 
 interface Props {
@@ -22,7 +26,9 @@ function HeaderMenu({ opacity }: Props) {
   const HeaderMenuBody: JSX.Element = (
     <>
       <LeftSide>
-        <LogoImg src={SleekAppLogo} alt="Sleek App" />
+        <Button variant="text" onClick={() => navigateToUrl("/", true)}>
+          <LogoImg src={DannyLimLogo} alt="Danny Lim" />
+        </Button>
       </LeftSide>
       <RightSide>
         <CustomMenuItem text="Home" route="/" />

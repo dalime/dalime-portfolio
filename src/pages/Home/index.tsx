@@ -1,6 +1,6 @@
 import React, { useState, useEffect, ReactNode } from "react";
 import { Helmet } from "react-helmet";
-import { yellow } from "@mui/material/colors";
+import { blue } from "@mui/material/colors";
 
 // Components
 import Hero from "./Hero";
@@ -18,14 +18,14 @@ import {
 } from "../../components";
 
 // Assets
-import sleekAppLogo from "../../assets/images/sleekapp-logo.png";
+import DannyLimLogo from "../../assets/images/dannylim-logo.png";
 
 interface GoldHighlightProps {
   children?: ReactNode | ReactNode[];
 }
 
 function GoldHighlight({ children }: GoldHighlightProps): JSX.Element {
-  return <span style={{ color: yellow[500] }}>{children}</span>;
+  return <span style={{ color: blue[500] }}>{children}</span>;
 }
 
 function Home() {
@@ -54,43 +54,43 @@ function Home() {
     <Page testId="home-page">
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Sleek App - App Development Agency</title>
+        <title>Danny Lim - Senior Developer & Technical Product Manager</title>
         <meta
           name="description"
-          content="Turn your digital ideas into reality. An app development agency that offers app and website design, development, and copywriting services. Contact us today!"
+          content="Turn your digital ideas into reality. Danny offers app and website development and product management services. Contact Danny today!"
         />
         <meta name="robots" content="max-image-preview:large" />
-        <link rel="canonical" href="https://sleekapp.io/" />
+        <link rel="canonical" href="https://dannylim.io/" />
         <meta name="generator" content="All in One SEO (AIOSEO) 4.3.6.1 " />
         <meta property="og:locale" content="en_US" />
         <meta
           property="og:site_name"
-          content="Sleek App - Turning visions into reality"
+          content="Danny Lim - Senior Developer & Technical Product Manager"
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Sleek App - App Development Agency"
+          content="Danny Lim - Senior Developer & Technical Product Manager"
         />
         <meta
           property="og:description"
-          content="Turn your digital ideas into reality. An app development agency that offers app and website design, development, and copywriting services. Contact us today!"
+          content="Turn your digital ideas into reality. Danny Lim offers app and website develompent and product management services. Contact me today!"
         />
-        <meta property="og:url" content="https://sleekapp.io/" />
-        <meta property="og:image" content={sleekAppLogo} />
-        <meta property="og:image:secure_url" content={sleekAppLogo} />
+        <meta property="og:url" content="https://dannylim.io/" />
+        <meta property="og:image" content={DannyLimLogo} />
+        <meta property="og:image:secure_url" content={DannyLimLogo} />
         <meta property="og:image:width" content="512" />
         <meta property="og:image:height" content="512" />
         <meta name="twitter:card" content="summary" />
         <meta
           name="twitter:title"
-          content="Sleek App - App Development Agency"
+          content="Danny Lim - Senior Developer & Technical Product Manager"
         />
         <meta
           name="twitter:description"
-          content="Turn your digital ideas into reality. An app development agency that offers app and website design, development, and copywriting services. Contact us today!"
+          content="Turn your digital ideas into reality. Danny Lim offers app and website development and product management services. Contact me today!"
         />
-        <meta name="twitter:image" content={sleekAppLogo} />
+        <meta name="twitter:image" content={DannyLimLogo} />
       </Helmet>
 
       <Hero />
@@ -118,14 +118,14 @@ function Home() {
         <Paragraph
           sx={{ width: paragraphWidth, marginBottom: 2, marginTop: 3 }}
         >
-          <GoldHighlight>The Ask: </GoldHighlight>We were tasked with creating a
+          <GoldHighlight>The Ask: </GoldHighlight>I was tasked with creating a
           2D lofi game with React. The game is meant to be played like a board
           game with selectable board zones and the board is meant to be zoomable
           / pinch and zoom.
         </Paragraph>
         <Paragraph sx={{ width: paragraphWidth, marginBottom: 3 }}>
-          <GoldHighlight>Our Approach: </GoldHighlight>Here is a detailed
-          explanation of how we approached the problem, step by step in a video.
+          <GoldHighlight>My Approach: </GoldHighlight>Here is a detailed
+          explanation of how I approached the problem, step by step in a video.
         </Paragraph>
         <iframe
           width={videoWidth}

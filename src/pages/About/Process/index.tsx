@@ -29,7 +29,7 @@ import agileSprintsJson from "../../../assets/lottie-jsons/agile-sprints.json";
 import deployingJson from "../../../assets/lottie-jsons/deploying.json";
 import deployJson from "../../../assets/lottie-jsons/deploy.json";
 import supportJson from "../../../assets/lottie-jsons/support.json";
-import moneyBagsJson from "../../../assets/lottie-jsons/moneybags.json";
+import downloadJson from "../../../assets/lottie-jsons/download.json";
 
 interface TextProps {
   key: string | number;
@@ -234,7 +234,7 @@ function Process() {
     : isMobile
     ? Math.min(windowWidth * 0.6, 300)
     : 300;
-  const moneyWidth = isSmallMobile
+  const downloadWidth = isSmallMobile
     ? windowWidth * 0.3
     : isMobile
     ? Math.min(windowWidth * 0.4, 200)
@@ -283,8 +283,8 @@ function Process() {
           />
           <Animation
             key="step-9-animation-1"
-            jsonPath={moneyBagsJson}
-            imageWidth={moneyWidth}
+            jsonPath={downloadJson}
+            imageWidth={downloadWidth}
           />
         </Column>
       );
@@ -312,7 +312,7 @@ function Process() {
             {renderLottieJson("step-1-animation", videoCallJson)}
             <StepHeading key="step-1-heading">#1 - Strategy Call</StepHeading>
             <Text key="step-1-text">
-              We'll discuss your project and create a project plan
+              I'll discuss your project and create a project plan
             </Text>
             <NextButton key={"step-1"} toNextStep={() => setJourneyStep(2)} />
           </>
@@ -324,7 +324,7 @@ function Process() {
             {renderLottieJson("step-2-animation", designJson)}
             <StepHeading key="step-2-heading">#2 - Design Rounds</StepHeading>
             <Text key="step-2-text">
-              Receive a mock-up you love with the help of our UI Designer
+              Receive a mock-up you love
             </Text>
             <NextButton key={"step-2"} toNextStep={() => setJourneyStep(3)} />
           </>
@@ -406,7 +406,7 @@ function Process() {
               #8 - Continued Support
             </StepHeading>
             <Text key="step-8-text">
-              We'll continue to squash bugs, develop new features, and consult
+              I'll continue to squash bugs, develop new features, and consult
               you on best practices
             </Text>
             <NextButton key={"step-8"} toNextStep={() => setJourneyStep(9)} />
@@ -426,9 +426,9 @@ function Process() {
                       ? navigateToUrl(process.env.REACT_APP_CALL_LINK)
                       : {}
                   }
-                  sx={{ padding: 2, marginBottom: 4 }}
+                  sx={{ padding: 2, marginBottom: 4, marginTop: 4 }}
                 >
-                  Print Money
+                  Develop Yours
                 </Button>
                 <Button
                   color="secondary"

@@ -2,7 +2,7 @@ import React from "react";
 import { useMediaQuery } from "react-responsive";
 import { Button } from "@mui/material";
 import { ArrowBack } from "@mui/icons-material";
-import { yellow } from "@mui/material/colors";
+import { blue } from "@mui/material/colors";
 
 // Types
 import { AuthorInformation } from "./types";
@@ -55,7 +55,7 @@ function PostBody({ title, body, closePost, authorInfo }: Props) {
         </MainHeading>
         {authorInfo && (
           <p style={{ fontSize: isMobile ? 14 : 18 }}>
-            By <span style={{ color: yellow[500] }}>{authorInfo.name}</span>
+            By <span style={{ color: blue[500] }}>{authorInfo.name}</span>
           </p>
         )}
         <div dangerouslySetInnerHTML={{ __html: body }} />

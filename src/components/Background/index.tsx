@@ -60,10 +60,10 @@ function Background() {
         },
         particles: {
           color: {
-            value: "#fff076",
+            value: "#5b9ff8",
           },
           links: {
-            color: "#fff076",
+            color: "#5b9ff8",
             distance: 180,
             enable: true,
             opacity: 0.2,
@@ -90,7 +90,7 @@ function Background() {
             value: 0.2,
           },
           shape: {
-            type: "triangle",
+            type: "polygon",
           },
           size: {
             value: { min: 2, max: 6 },

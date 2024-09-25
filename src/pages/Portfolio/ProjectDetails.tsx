@@ -1,7 +1,7 @@
 import React, { ReactNode } from "react";
 import { Button, ButtonGroup } from "@mui/material";
 import { Code, Web, Call } from "@mui/icons-material";
-import { yellow, grey } from "@mui/material/colors";
+import { blue, grey } from "@mui/material/colors";
 
 // Types
 import { PortfolioItemInterface } from "../../types";
@@ -89,7 +89,7 @@ function ProjectDetails({ project, isMobile }: Props) {
             fontSize: isMobile ? 16 : "auto",
           }}
         >
-          Our Role: <span style={{ color: yellow[500] }}>{role}</span>
+          My Role: <span style={{ color: blue[500] }}>{role}</span>
         </H4>
       )}
       {results && (
@@ -101,20 +101,20 @@ function ProjectDetails({ project, isMobile }: Props) {
       {before && (
         <>
           <SubHeading isMobile={isMobile || false}>
-            Before Our Engagement
+            Before My Engagement
           </SubHeading>
           <BodyText isMobile={isMobile || false}>{before}</BodyText>
         </>
       )}
       {work && (
         <>
-          <SubHeading isMobile={isMobile || false}>The Work We Did</SubHeading>
+          <SubHeading isMobile={isMobile || false}>The Work I Did</SubHeading>
           <BodyText isMobile={isMobile || false}>{work}</BodyText>
         </>
       )}
       {approach && (
         <>
-          <SubHeading isMobile={isMobile || false}>Our Approach</SubHeading>
+          <SubHeading isMobile={isMobile || false}>My Approach</SubHeading>
           <BodyText isMobile={isMobile || false}>{approach}</BodyText>
         </>
       )}
@@ -156,7 +156,7 @@ function ProjectDetails({ project, isMobile }: Props) {
           </>
         ))}
       <SubHeading isMobile={isMobile || false}>
-        Get Your Own Sleek App
+        Get Your Own App
       </SubHeading>
       <Button
         variant="contained"

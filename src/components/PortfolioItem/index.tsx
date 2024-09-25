@@ -103,7 +103,7 @@ function PortfolioItem({
         )}
         {role && (
           <>
-            <Subtitle>Our Role</Subtitle>
+            <Subtitle>My Role</Subtitle>
             <Typography variant="body1" sx={{ marginBottom: 2 }}>
               {role}
             </Typography>
