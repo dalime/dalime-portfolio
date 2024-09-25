@@ -1,6 +1,7 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
 import { Button } from "@mui/material";
+import { blue } from "@mui/material/colors";
 import { ChevronLeft, ChevronRight } from "@mui/icons-material";
 
 // Animated Slider
@@ -15,6 +16,7 @@ import {
   Section,
   Subheading,
   H3,
+  H4,
   Paragraph,
   Backdrop,
   StarRating,
@@ -41,6 +43,7 @@ function SliderButton(left: boolean, isMobile: boolean): JSX.Element {
 
 function Reviews() {
   // Hooks
+  const isTablet = useMediaQuery({ maxWidth: 786 });
   const isMobile = useMediaQuery({ maxWidth: 768 });
 
   // Get Reviews from Environment Variables
@@ -53,7 +56,10 @@ function Reviews() {
   const clientReview3: ClientReview | null = process.env.REACT_APP_REVIEW_3
     ? JSON.parse(process.env.REACT_APP_REVIEW_3)
     : null;
-  const portfolioItems = [clientReview1, clientReview2, clientReview3];
+  const clientReview4: ClientReview | null = process.env.REACT_APP_REVIEW_4
+    ? JSON.parse(process.env.REACT_APP_REVIEW_4)
+    : null;
+  const portfolioItems = [clientReview1, clientReview2, clientReview3, clientReview4];
   // const [portfolioItems, setPortfolioItems] = useState<(ClientReview | null)[]>(
   //   [clientReview1, clientReview2, clientReview3]
   // );
@@ -100,18 +106,19 @@ function Reviews() {
       >
         {portfolioItems.map((item, index) => {
           if (!item) return <></>;
-          const { name, feedback, clientImgName, rating } = item;
+          const { name, company, feedback, clientImgName, rating } = item;
           return (
             <div key={`client-review-${index}`}>
               <Backdrop className="center">
-                <H3>{name}</H3>
+                <H3 style={isMobile ? { fontSize: 16 } : {}}>{name}</H3>
+                {isTablet ? <></> : <H4 style={{ color: blue[300], marginBottom: 18 }}>{company}</H4>}
                 {clientImgName && (
                   <img
                     src={require(`../../../assets/images/testimonials/${clientImgName}`)}
                     alt={`Review from ${name}`}
                     style={{
-                      width: 150,
-                      height: 150,
+                      width: isMobile ? 100 : 150,
+                      height: isMobile ? 100 : 150,
                       objectFit: "contain",
                       borderRadius: "50%",
                       marginBottom: 20,
@@ -119,7 +126,7 @@ function Reviews() {
                   />
                 )}
                 <StarRating rating={rating} />
-                <Paragraph>{feedback}</Paragraph>
+                <Paragraph>{isMobile ? `${feedback.substring(0, 150)}...` : feedback}</Paragraph>
               </Backdrop>
             </div>
           );

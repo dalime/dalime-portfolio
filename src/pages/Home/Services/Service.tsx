@@ -92,7 +92,7 @@ function Service({ title, animationName, description }: Props) {
       <Typography
         variant="h3"
         color="primary"
-        sx={{ marginTop: 2, marginBottom: 2, fontSize: 30, fontWeight: 500 }}
+        sx={{ marginTop: 2, marginBottom: 2, fontSize: 30, fontWeight: 500, textAlign: 'center' }}
       >
         {title}
       </Typography>
