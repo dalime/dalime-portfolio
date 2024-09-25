@@ -17,7 +17,7 @@ function HeroText({ mobile }: Props) {
       <Typography
         variant="h1"
         sx={{
-          fontSize: 30,
+          fontSize: mobile ? 26 : 30,
           textTransform: "uppercase",
           fontWeight: 600,
           textAlign: mobile ? "center" : "left",
@@ -30,7 +30,7 @@ function HeroText({ mobile }: Props) {
         sx={{
           fontWeight: 500,
           marginTop: 2,
-          fontSize: mobile ? 40 : "auto",
+          fontSize: mobile ? 32 : "auto",
           textAlign: mobile ? "center" : "left",
         }}
       >
@@ -48,7 +48,7 @@ function HeroText({ mobile }: Props) {
           textAlign: mobile ? "center" : "left",
         }}
       >
-        I turn visions into reality
+        I turn ideas into tangible products
       </Typography>
       <Button
         variant="contained"

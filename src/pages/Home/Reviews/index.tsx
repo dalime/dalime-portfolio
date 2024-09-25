@@ -126,7 +126,7 @@ function Reviews() {
                   />
                 )}
                 <StarRating rating={rating} />
-                <Paragraph>{isMobile ? `${feedback.substring(0, 150)}...` : feedback}</Paragraph>
+                <Paragraph>{feedback}</Paragraph>
               </Backdrop>
             </div>
           );
