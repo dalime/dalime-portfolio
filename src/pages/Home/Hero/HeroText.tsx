@@ -2,6 +2,7 @@ import React from "react";
 import Typed from "react-typed";
 import { Button, Typography } from "@mui/material";
 import { blue } from "@mui/material/colors";
+import { Code } from "@mui/icons-material";
 
 // Helpers
 import { navigateToUrl } from "../../../helpers";
@@ -57,6 +58,7 @@ function HeroText({ mobile }: Props) {
             ? navigateToUrl(process.env.REACT_APP_CALL_LINK)
             : {}
         }
+        startIcon={<Code fontSize="large" />}
       >
         Develop Your App
       </Button>

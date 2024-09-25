@@ -1,7 +1,7 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
 import { Button } from "@mui/material";
-import { Paid } from "@mui/icons-material";
+import { Code } from "@mui/icons-material";
 
 // Helpers
 import { navigateToUrl } from "../../../helpers";
@@ -38,7 +38,7 @@ function CTASection() {
           padding: 3,
         }}
         className="pulse"
-        startIcon={<Paid fontSize="large" />}
+        startIcon={<Code fontSize="large" />}
       >
         Develop Your App
       </Button>
