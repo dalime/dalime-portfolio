@@ -168,16 +168,16 @@ function TechStack({ noAction }: Props) {
         <Column>
           {renderTech(reactIcon, "React")}
           {renderTech(solidityIcon, "Solidity")}
-          {renderTech(nodeIcon, "Node.js")}
+          {renderTech(postgresQlIcon, "PostgreSQL")}
         </Column>
         <Column>
           {renderTech(graphQlIcon, "GraphQL")}
-          {renderTech(shopifyIcon, "Shopify")}
+          {renderTech(nodeIcon, "Node.js")}
           {renderTech(mongoDbIcon, "Mongo DB")}
         </Column>
         <Column>
           {renderTech(typescriptIcon, "Typescript")}
-          {renderTech(postgresQlIcon, "PostgreSQL")}
+          {renderTech(shopifyIcon, "Shopify")}
           {renderTech(awsIcon, "AWS")}
         </Column>
       </Rows>
