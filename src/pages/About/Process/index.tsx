@@ -234,7 +234,7 @@ function Process() {
     : isMobile
     ? Math.min(windowWidth * 0.6, 300)
     : 300;
-  const moneyWidth = isSmallMobile
+  const downloadWidth = isSmallMobile
     ? windowWidth * 0.3
     : isMobile
     ? Math.min(windowWidth * 0.4, 200)
@@ -284,7 +284,7 @@ function Process() {
           <Animation
             key="step-9-animation-1"
             jsonPath={downloadJson}
-            imageWidth={moneyWidth}
+            imageWidth={downloadWidth}
           />
         </Column>
       );

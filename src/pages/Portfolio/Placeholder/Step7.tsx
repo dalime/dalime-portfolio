@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 import { animated, useSpring } from "@react-spring/web";
 import { Button } from "@mui/material";
-import { AppShortcut, Paid } from "@mui/icons-material";
+import { AppShortcut, Download } from "@mui/icons-material";
 import { green, grey } from "@mui/material/colors";
 
 // Types
@@ -98,7 +98,7 @@ function Step7({ deviceHeight }: BaseProps) {
         >
           <animated.div
             children={
-              <Paid
+              <Download
                 fontSize="large"
                 style={{
                   width: animatedIconSize,
