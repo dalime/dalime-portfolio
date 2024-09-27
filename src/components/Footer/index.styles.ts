@@ -17,6 +17,7 @@ export const SocialMediaIcons = styled.div`
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  margin-bottom: 10px;
 `;
 
 export const LogoImg = styled.img`
