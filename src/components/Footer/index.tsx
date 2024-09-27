@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useMediaQuery } from "react-responsive";
 import { Button } from "@mui/material";
-import { Email, LinkedIn, YouTube } from "@mui/icons-material";
+import { Email, GitHub, LinkedIn, YouTube } from "@mui/icons-material";
 import { grey } from "@mui/material/colors";
 
 // Helpers
@@ -37,6 +37,11 @@ function Footer() {
           "New Inquiry"
         )}`),
       icon: <Email />,
+    },
+    {
+      name: "GitHub",
+      action: () => navigateToUrl("https://github.com/dalime"),
+      icon: <GitHub />,
     },
     {
       name: "LinkedIn",
