@@ -136,3 +136,13 @@ export interface SnackBarState {
   color: "success" | "error" | "info" | "warning";
   action?(): void;
 }
+
+export interface ResumeItem {
+  company: string;
+  position: string;
+  startDate: string;
+  endDate: string;
+  highlights: string[]
+  imgSrc: string;
+  url: string;
+}

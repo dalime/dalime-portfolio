@@ -26,6 +26,7 @@ import { TeamMemberImg } from "./index.styles";
 import aboutPageImg from "../../assets/images/pages/dannylim-about-page.png";
 import dannyAvatarImg from "../../assets/images/team/danny-avatar.png";
 import dannyAvatarBwImg from "../../assets/images/team/danny-avatar-bw.png";
+import Resume from "./Resume";
 
 interface SubHeadProps {
   isMobile: boolean;
@@ -213,6 +214,9 @@ function About() {
         >
           Book 1:1 Strategy Call
         </Button>
+      </SectionCut>
+      <SectionCut>
+        <Resume />
       </SectionCut>
       <TechStack />
       <SectionCut>
