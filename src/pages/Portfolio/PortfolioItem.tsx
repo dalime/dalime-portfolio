@@ -1,7 +1,7 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
 import { ListItem, ListItemAvatar, ListItemText, Avatar } from "@mui/material";
-import { Code, Keyboard } from "@mui/icons-material";
+import { Code, Dashboard } from "@mui/icons-material";
 
 // Types
 import { PortfolioItemInterface } from "../../types";
@@ -36,10 +36,9 @@ function PortfolioItem({
   const renderRoleIcon = (role: string): JSX.Element => {
     if (role.toLowerCase().includes("developer")) return <Code />;
     if (
-      role.toLowerCase().includes("writing") ||
-      role.toLowerCase().includes("writer")
+      role.toLowerCase().includes("manager")
     )
-      return <Keyboard />;
+      return <Dashboard />;
     return <></>;
   };
 

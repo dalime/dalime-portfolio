@@ -22,12 +22,18 @@ function CaseStudies() {
   const portfolioItem4 = process.env.REACT_APP_PORTFOLIO_ITEM_4
     ? JSON.parse(process.env.REACT_APP_PORTFOLIO_ITEM_4)
     : null;
+  const portfolioItem5 = process.env.REACT_APP_PORTFOLIO_ITEM_5
+    ? JSON.parse(process.env.REACT_APP_PORTFOLIO_ITEM_5)
+    : null;
   const portfolioItems: (PortfolioItemInterface | null)[] = [
     portfolioItem1,
     portfolioItem2,
     portfolioItem3,
     portfolioItem4,
+    portfolioItem5,
   ];
+
+  console.log('portfolioItems', portfolioItems);
 
   const renderPortfolioItems = (): JSX.Element[] => {
     return portfolioItems.map((item, index) => {

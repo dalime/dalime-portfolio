@@ -88,11 +88,13 @@ function MobilePortfolio() {
     const item2 = process.env.REACT_APP_PORTFOLIO_ITEM_2 || null;
     const item3 = process.env.REACT_APP_PORTFOLIO_ITEM_3 || null;
     const item4 = process.env.REACT_APP_PORTFOLIO_ITEM_4 || null;
+    const item5 = process.env.REACT_APP_PORTFOLIO_ITEM_5 || null;
     const items = [];
     if (item1) items.push(item1);
     if (item2) items.push(item2);
     if (item3) items.push(item3);
     if (item4) items.push(item4);
+    if (item5) items.push(item5);
 
     return items.map((item, index) => {
       if (!item) return <></>;
