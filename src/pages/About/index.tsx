@@ -171,7 +171,7 @@ function About() {
         for customers.
       </Paragraph>
       <SectionCut style={paddingSide}>
-        <SubHead isMobile={isMobile}>How Your Journey Will Look</SubHead>
+        <SubHead isMobile={isMobile}>How Your Delivery Will Look</SubHead>
         <Process />
       </SectionCut>
       <SectionCut
@@ -182,10 +182,11 @@ function About() {
       >
         <Button
           onClick={() =>
-            process.env.REACT_APP_LINKEDIN_URL
-              ? navigateToUrl(process.env.REACT_APP_LINKEDIN_URL)
+            process.env.REACT_APP_CALL_LINK
+              ? navigateToUrl(process.env.REACT_APP_CALL_LINK)
               : {}
           }
+          style={{ cursor: 'pointer' }}
         >
           <TeamMemberImg
             src={imgHovering ? dannyAvatarImg : dannyAvatarBwImg}

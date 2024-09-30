@@ -428,7 +428,7 @@ function Process() {
                   }
                   sx={{ padding: 2, marginBottom: 4, marginTop: 4 }}
                 >
-                  Develop Yours
+                  Develop Your App
                 </Button>
                 <Button
                   color="secondary"
