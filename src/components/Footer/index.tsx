@@ -14,7 +14,7 @@ import { Paragraph } from "../fonts";
 import { Wrapper, SocialMediaIcons, LogoImg } from "./index.styles";
 
 // Assets
-import DannyAvatar from "../../assets/images/team/danny-avatar-bw.png";
+import SleekAppLogo from "../../assets/images/sleekapp-logo.png";
 
 interface SocialMediaLink {
   name: string;
@@ -78,7 +78,7 @@ function Footer() {
           marginBottom: 20,
         }}
       >
-        <LogoImg src={DannyAvatar} alt="Danny Lim" />
+        <LogoImg src={SleekAppLogo} alt="Sleek App logo" />
         <Paragraph
           sx={{
             color: grey[600],
