@@ -34,11 +34,11 @@ function PortfolioItem({
    * @returns JSX.Element
    */
   const renderRoleIcon = (role: string): JSX.Element => {
-    if (role.toLowerCase().includes("developer")) return <Code />;
+    if (role.toLowerCase().includes("manager")) return <Dashboard />;
     if (
-      role.toLowerCase().includes("manager")
+      role.toLowerCase().includes("developer")
     )
-      return <Dashboard />;
+      return <Code />;
     return <></>;
   };
 
