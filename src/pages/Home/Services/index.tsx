@@ -26,7 +26,7 @@ function Services() {
     >
       {!isMobile && (
         <Subheading>
-          Senior Developer & Technical Product Manager
+          Technical Product Manager & Senior Developer
         </Subheading>
       )}
       <Wrapper style={{ flexDirection: isSmallScreen ? "column" : "row" }}>

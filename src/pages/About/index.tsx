@@ -99,7 +99,7 @@ function About() {
     <Page>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>About Danny Lim - Senior Developer & Technical Product Manager</title>
+        <title>About Danny Lim - Technical Product Manager & Senior Developer</title>
         <meta
           name="description"
           content="Danny Lim delivers high quality web and mobile apps for clients who want to provide real value to customers."
@@ -110,7 +110,7 @@ function About() {
         <meta property="og:locale" content="en_US" />
         <meta
           property="og:site_name"
-          content="Danny Lim - Senior Developer & Technical Product Manager"
+          content="Danny Lim - Technical Product Manager & Senior Developer"
         />
         <meta property="og:type" content="article" />
         <meta

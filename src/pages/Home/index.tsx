@@ -54,7 +54,7 @@ function Home() {
     <Page testId="home-page">
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Danny Lim - Senior Developer & Technical Product Manager</title>
+        <title>Danny Lim - Technical Product Manager & Senior Developer</title>
         <meta
           name="description"
           content="Turn your digital ideas into reality. Danny offers app and website development and product management services. Contact Danny today!"
@@ -65,12 +65,12 @@ function Home() {
         <meta property="og:locale" content="en_US" />
         <meta
           property="og:site_name"
-          content="Danny Lim - Senior Developer & Technical Product Manager"
+          content="Danny Lim - Technical Product Manager & Senior Developer"
         />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Danny Lim - Senior Developer & Technical Product Manager"
+          content="Danny Lim - Technical Product Manager & Senior Developer"
         />
         <meta
           property="og:description"
@@ -84,7 +84,7 @@ function Home() {
         <meta name="twitter:card" content="summary" />
         <meta
           name="twitter:title"
-          content="Danny Lim - Senior Developer & Technical Product Manager"
+          content="Danny Lim - Technical Product Manager & Senior Developer"
         />
         <meta
           name="twitter:description"

@@ -35,7 +35,7 @@ function HeroText({ mobile }: Props) {
         }}
       >
         <Typed
-          strings={["Senior Developer + Product Manager"]}
+          strings={["Technical Product Manager + Senior Developer"]}
           typeSpeed={40}
           style={{ textAlign: mobile ? "center" : "left" }}
         />
