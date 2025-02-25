@@ -31,7 +31,7 @@ import { Subheading, Paragraph } from "../fonts";
 import { Form, Separator, Line, LogoImg, Loader } from "./index.styles";
 
 // Assets
-import DannyLimLogo from "../../assets/images/dannylim-logo.png";
+import dannyAvatarImg from "../../assets/images/team/danny-avatar.png";
 
 function ContactForm() {
   // Hooks
@@ -115,7 +115,7 @@ function ContactForm() {
     >
       <Separator>
         <Line />
-        <LogoImg src={DannyLimLogo} alt="Danny Lim" />
+        <LogoImg src={dannyAvatarImg} alt="Danny Lim" style={{ width: isMobile ? 80 : 120, height: isMobile ? 80 : 120, borderRadius: '50%', border: '1px solid #64b5f6' }} />
         <Line />
       </Separator>
       <Subheading sx={{ marginBottom: 1, fontSize: isMobile ? 30 : 40 }}>
