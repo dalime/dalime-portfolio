@@ -145,4 +145,6 @@ export interface ResumeItem {
   highlights: string[]
   imgSrc: string;
   url: string;
+  large?: boolean;
+  small?: boolean;
 }

@@ -23,3 +23,10 @@ export const FlexColumn = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
 `;
+
+export const FlexRow = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+`;

@@ -20,7 +20,7 @@ import UMDLogo from '../../../assets/images/resume/university-of-maryland.png';
 
 function Resume() {
   // Hooks
-  const isMobile = useMediaQuery({ maxWidth: 768 });
+  const isTablet = useMediaQuery({ maxWidth: 768 });
 
   // Constants
   const resumeItems: ResumeItem[] = [
@@ -28,7 +28,7 @@ function Resume() {
       company: 'Sleek App',
       position: 'Senior Software Engineer + Technical Product Manager',
       startDate: '2018',
-      endDate: 'Present',
+      endDate: 'Now',
       highlights: [
         'Led the development and launch of a Web3 gaming platform, increasing user retention by 20% and growing DAUs by 40% in two months.',
         'Defined and executed the product roadmap for custom Shopify apps, driving a 30% revenue increase.',
@@ -41,6 +41,7 @@ function Resume() {
       ],
       imgSrc: SleekAppLogo,
       url: 'https://sleekapp.io',
+      large: true,
     },
     {
       company: 'Booz Allen Hamilton',
@@ -68,6 +69,7 @@ function Resume() {
       ],
       imgSrc: A2ZLogo,
       url: 'https://mya2zevents.com/',
+      small: true,
     },
     {
       company: 'Deloitte',
@@ -81,6 +83,7 @@ function Resume() {
       ],
       imgSrc: DeloitteLogo,
       url: 'https://deloitte.com/',
+      small: true,
     },
     {
       company: 'Unviersity of Maryland',
@@ -94,12 +97,13 @@ function Resume() {
       ],
       imgSrc: UMDLogo,
       url: 'https://umd.edu/',
+      small: true,
     },
   ];
 
   return (
     <ResumeWrapper>
-      <Subheading sx={isMobile ? { fontSize: 30 } : {}}>My Story</Subheading>
+      <Subheading sx={isTablet ? { fontSize: 30 } : {}}>My Story</Subheading>
       {resumeItems.map((item, index) => (
         <ResumeListItem key={`resume-item-${index}`} item={item} />
       ))}
