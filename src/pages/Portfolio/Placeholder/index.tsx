@@ -170,7 +170,7 @@ function Placeholder({ isMobile }: Props) {
                 "implementFeature();",
                 "build();",
                 "publish();",
-                "Danny Lim Complete!",
+                "App Complete!",
               ]}
               backSpeed={0}
               typeSpeed={40}
