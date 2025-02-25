@@ -13,7 +13,7 @@ import About from "./pages/About";
 // import Blog from "./pages/Blog";
 
 // Components
-import { MusicPlayer } from "./components";
+// import { MusicPlayer } from "./components";
 
 const darkTheme = createTheme({
   palette: {
@@ -60,7 +60,7 @@ function App() {
       <ThemeProvider theme={darkTheme}>
         <CssBaseline />
         <RouterProvider router={router} />
-        <MusicPlayer />
+        {/* <MusicPlayer /> */}
       </ThemeProvider>
     </RecoilRoot>
   );
