@@ -159,7 +159,7 @@ function TechStack({ noAction }: Props) {
         marginBottom: 30,
       }}
     >
-      <SubHead isMobile={isMobile}>My Specialized Tech Stack</SubHead>
+      <SubHead isMobile={isMobile}>Danny's Specialized Tech Stack</SubHead>
       <Paragraph sx={paragraphSx}>
         I have a core tech stack in which I specialize, ensuring world-class
         quality with it.

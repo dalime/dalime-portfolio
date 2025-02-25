@@ -147,34 +147,6 @@ function About() {
       <MainHeading sx={isMobile ? { ...mainStyle, fontSize: 30 } : mainStyle}>
         About
       </MainHeading>
-      <Paragraph
-        sx={{
-          ...paragraphSx,
-          ...paddingSide,
-          width: isMobile
-            ? "100%"
-            : isSmallScreen
-            ? "75%"
-            : isMedScreen
-            ? "60%"
-            : "50%",
-          marginLeft: isMobile
-            ? 0
-            : isSmallScreen
-            ? "12.5%"
-            : isMedScreen
-            ? "20%"
-            : "25%",
-        }}
-      >
-        Danny Lim delivers high quality web and
-        mobile apps for clients who want to create real value-providing products
-        for customers.
-      </Paragraph>
-      <SectionCut style={paddingSide}>
-        <SubHead isMobile={isMobile}>How Your Delivery Will Look</SubHead>
-        <Process />
-      </SectionCut>
       <SectionCut
         style={{
           ...paddingSide,
@@ -196,11 +168,28 @@ function About() {
             onMouseLeave={() => setImgHovering(false)}
           />
         </Button>
-        <Paragraph sx={paragraphSx}>
-          “There is nothing more fulfilling than watching clients&apos; visions
-          become a reality”
+        <Paragraph sx={{
+          ...paragraphSx,
+          ...paddingSide,
+          width: isMobile
+            ? "100%"
+            : isSmallScreen
+            ? "75%"
+            : isMedScreen
+            ? "60%"
+            : "50%",
+          marginLeft: isMobile
+            ? 0
+            : isSmallScreen
+            ? "12.5%"
+            : isMedScreen
+            ? "20%"
+            : "25%",
+        }}>
+          Danny Lim delivers high quality web and
+          mobile apps for clients who want to create real value-providing products
+          for customers.
         </Paragraph>
-        <Paragraph>- Danny Lim</Paragraph>
         <Button
           className="pulse"
           variant="contained"
@@ -214,6 +203,10 @@ function About() {
         >
           Book 1:1 Strategy Call
         </Button>
+      </SectionCut>
+      <SectionCut style={paddingSide}>
+        <SubHead isMobile={isMobile}>How Your Delivery Will Look</SubHead>
+        <Process />
       </SectionCut>
       <SectionCut>
         <Resume />
