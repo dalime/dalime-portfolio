@@ -33,7 +33,7 @@ function Footer() {
     {
       name: "Email",
       action: () =>
-        (window.location.href = `mailto:support@sleekapp.io?subject=${encodeURIComponent(
+        (window.location.href = `mailto:danny.b.lim@gmail.com?subject=${encodeURIComponent(
           "New Inquiry"
         )}`),
       icon: <Email />,

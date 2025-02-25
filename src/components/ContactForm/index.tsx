@@ -45,7 +45,7 @@ function ContactForm() {
   const [email, setEmail] = useState<string>("");
   const [service, setService] = useState<
     "development" | "product management"
-  >("development");
+  >("product management");
   const [message, setMessage] = useState<string>("");
   const [emailLoading, setEmailLoading] = useState<boolean>(false);
   const [emailSuccess, setEmailSuccess] = useState<boolean>(false);
@@ -166,15 +166,15 @@ function ContactForm() {
             name="service-group"
           >
             <FormControlLabel
-              value="development"
-              control={<Radio />}
-              label="Development"
-              disabled={emailLoading}
-            />
-            <FormControlLabel
               value="product management"
               control={<Radio />}
               label="Product Management"
+              disabled={emailLoading}
+            />
+            <FormControlLabel
+              value="development"
+              control={<Radio />}
+              label="Development"
               disabled={emailLoading}
             />
           </RadioGroup>

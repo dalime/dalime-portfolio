@@ -31,7 +31,7 @@ import MobilePortfolio from "./MobilePortfolio";
 import "./index.css";
 
 // Assets
-import portfolioPageImg from "../../assets/images/pages/sleekapp-portfolio-page.png";
+import DannyAvatarImg from "../../assets/images/team/danny-avatar-bw.png";
 import MatrixBackground from "../../assets/images/matrix-background.gif";
 
 function Portfolio() {
@@ -114,8 +114,8 @@ function Portfolio() {
           content="Danny Lim's web development portfolio of applicable work. You can find recent case studies of how I handled problems and approached solutions for clients."
         />
         <meta property="og:url" content="https://dannylim.io/portfolio/" />
-        <meta property="og:image" content={portfolioPageImg} />
-        <meta property="og:image:secure_url" content={portfolioPageImg} />
+        <meta property="og:image" content={DannyAvatarImg} />
+        <meta property="og:image:secure_url" content={DannyAvatarImg} />
         <meta
           property="article:published_time"
           content="2023-10-11T08:52:12+00:00"
@@ -130,7 +130,7 @@ function Portfolio() {
           name="twitter:description"
           content="Danny Lim's web development portfolio of applicable work. You can find recent case studies of how I handled problems and approached solutions for clients."
         />
-        <meta name="twitter:image" content={portfolioPageImg} />
+        <meta name="twitter:image" content={DannyAvatarImg} />
       </Helmet>
 
       <Section padding={20}>
