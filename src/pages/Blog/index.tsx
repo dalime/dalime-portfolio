@@ -21,7 +21,6 @@ import { Page, MainHeading, Subheading } from "../../components";
 import { PreviewsList, ErrorWrapper } from "./index.styles";
 
 // Assets
-import DannyLimLogo from "../../assets/images/dannylim-logo.png";
 import DannyAvatarImg from "../../assets/images/team/danny-avatar.png";
 
 interface WPPostWithAuthor extends WPPost {
@@ -161,8 +160,8 @@ function Blog() {
           content="Danny Lim's blog that talks about trends in multiple industries, best practices, and new solutions to emerging problems."
         />
         <meta property="og:url" content="https://dannylim.io/blog/" />
-        <meta property="og:image" content={DannyLimLogo} />
-        <meta property="og:image:secure_url" content={DannyLimLogo} />
+        <meta property="og:image" content={DannyAvatarImg} />
+        <meta property="og:image:secure_url" content={DannyAvatarImg} />
         <meta property="og:image:width" content="512" />
         <meta property="og:image:height" content="512" />
         <meta property="article:tag" content="blog" />
@@ -181,7 +180,7 @@ function Blog() {
           name="twitter:description"
           content="Danny Lim's blog that talks about trends in multiple industries, best practices, and new solutions to emerging problems."
         />
-        <meta name="twitter:image" content={DannyLimLogo} />
+        <meta name="twitter:image" content={DannyAvatarImg} />
       </Helmet>
 
       <MainHeading

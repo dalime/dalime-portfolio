@@ -13,7 +13,7 @@ import { Wrapper, RightSide, LeftSide, LogoImg } from "./index.styles";
 import "./index.css";
 
 // Images
-import DannyLimLogo from "../../assets/images/dannylim-logo.png";
+import DannyAvatarImg from "../../assets/images/team/danny-avatar-bw.png";
 import MobileMenu from "../MobileMenu";
 
 interface Props {
@@ -27,7 +27,7 @@ function HeaderMenu({ opacity }: Props) {
     <>
       <LeftSide>
         <Button variant="text" onClick={() => navigateToUrl("/", true)}>
-          <LogoImg src={DannyLimLogo} alt="Danny Lim" />
+          <LogoImg src={DannyAvatarImg} alt="Danny Lim" />
         </Button>
       </LeftSide>
       <RightSide>

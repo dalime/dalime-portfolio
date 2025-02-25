@@ -18,7 +18,7 @@ import {
 } from "../../components";
 
 // Assets
-import DannyLimLogo from "../../assets/images/dannylim-logo.png";
+import DannyAvatarImg from "../../assets/images/team/danny-avatar-bw.png";
 
 interface GoldHighlightProps {
   children?: ReactNode | ReactNode[];
@@ -77,8 +77,8 @@ function Home() {
           content="Turn your digital ideas into reality. Danny Lim offers app and website develompent and product management services. Contact me today!"
         />
         <meta property="og:url" content="https://dannylim.io/" />
-        <meta property="og:image" content={DannyLimLogo} />
-        <meta property="og:image:secure_url" content={DannyLimLogo} />
+        <meta property="og:image" content={DannyAvatarImg} />
+        <meta property="og:image:secure_url" content={DannyAvatarImg} />
         <meta property="og:image:width" content="512" />
         <meta property="og:image:height" content="512" />
         <meta name="twitter:card" content="summary" />
@@ -90,7 +90,7 @@ function Home() {
           name="twitter:description"
           content="Turn your digital ideas into reality. Danny Lim offers app and website development and product management services. Contact me today!"
         />
-        <meta name="twitter:image" content={DannyLimLogo} />
+        <meta name="twitter:image" content={DannyAvatarImg} />
       </Helmet>
 
       <Hero />
