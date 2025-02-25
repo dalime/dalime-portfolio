@@ -24,19 +24,21 @@ function Services() {
         paddingBottom: "7.5%",
       }}
     >
-      <Subheading sx={isMobile ? { fontSize: 30 } : {}}>
-        Senior Developer & Technical Product Manager
-      </Subheading>
+      {!isMobile && (
+        <Subheading>
+          Senior Developer & Technical Product Manager
+        </Subheading>
+      )}
       <Wrapper style={{ flexDirection: isSmallScreen ? "column" : "row" }}>
-        <Service
-          title="Development"
-          animationName="development"
-          description="Customized apps and websites that lead to business growth"
-        />
         <Service
           title="Product Management"
           animationName="product management"
           description="Technical product management to bring your project forward"
+        />
+        <Service
+          title="Software Development"
+          animationName="development"
+          description="Customized apps and websites that lead to business growth"
         />
       </Wrapper>
     </Section>
