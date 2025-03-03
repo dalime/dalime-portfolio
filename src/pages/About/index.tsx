@@ -14,6 +14,7 @@ import {
   Section,
   MainHeading,
   Paragraph,
+  PersonalLife,
   Subheading,
   ContactForm,
   TechStack,
@@ -210,6 +211,9 @@ function About() {
       </SectionCut>
       <SectionCut>
         <Resume />
+      </SectionCut>
+      <SectionCut>
+        <PersonalLife />
       </SectionCut>
       <TechStack />
       <SectionCut>

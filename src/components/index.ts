@@ -5,6 +5,7 @@ import HeaderMenu from "./HeaderMenu";
 import MobileMenu from "./MobileMenu";
 import MusicPlayer from "./MusicPlayer";
 import Page from "./Page";
+import PersonalLife from "../pages/About/PersonalLife";
 import PortfolioItem from "./PortfolioItem";
 import Section from "./Section";
 import StarRating from "./StarRating";
@@ -18,6 +19,7 @@ export {
   MobileMenu,
   MusicPlayer,
   Page,
+  PersonalLife,
   PortfolioItem,
   Section,
   StarRating,
