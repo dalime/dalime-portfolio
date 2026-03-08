@@ -15,7 +15,7 @@ export const sendEmail = async (email: string, name: string, service: string, me
       message,
     };
 
-    fetch(`${process.env.REACT_APP_BACKEND_URL}/send-email`, {
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/send-email`, {
       method: "POST",
       headers: {
         "Accept": "application/json",

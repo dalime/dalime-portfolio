@@ -6,7 +6,7 @@ import { WPPost } from '../types';
  * @returns WPPost[]
  */
 export const fetchPosts = async (): Promise<WPPost[]> => {
-  return fetch(`${process.env.REACT_APP_PERSONAL_WP_URL}/wp-json/wp/v2/posts`, {
+  return fetch(`${import.meta.env.VITE_PERSONAL_WP_URL}/wp-json/wp/v2/posts`, {
     method: "GET",
     headers: {
       "Accept": "application/json",

@@ -6,6 +6,9 @@ import { blue } from "@mui/material/colors";
 // Types
 import { PortfolioItemInterface } from "../../types";
 
+// Data
+import { portfolioItems } from "../../data/portfolioItems";
+
 // Components
 import ProjectDetails from "./ProjectDetails";
 import PortfolioItem from "./PortfolioItem";
@@ -26,6 +29,11 @@ import "./index.css";
 
 // Assets
 import MatrixBackground from "../../assets/images/matrix-background.gif";
+
+const portfolioImages = import.meta.glob<{ default: string }>(
+  "../../assets/images/portfolio/*",
+  { eager: true }
+);
 
 interface MobilePortfolioItemInterface extends PortfolioItemInterface {
   mobileImgSrc: string;
@@ -84,32 +92,16 @@ function MobilePortfolio() {
    * @returns JSX.Element[]
    */
   const renderPortfolioItems = (): JSX.Element[] => {
-    const item1 = process.env.REACT_APP_PORTFOLIO_ITEM_1 || null;
-    const item2 = process.env.REACT_APP_PORTFOLIO_ITEM_2 || null;
-    const item3 = process.env.REACT_APP_PORTFOLIO_ITEM_3 || null;
-    const item4 = process.env.REACT_APP_PORTFOLIO_ITEM_4 || null;
-    const item5 = process.env.REACT_APP_PORTFOLIO_ITEM_5 || null;
-    const items = [];
-    if (item1) items.push(item1);
-    if (item2) items.push(item2);
-    if (item3) items.push(item3);
-    if (item4) items.push(item4);
-    if (item5) items.push(item5);
-
-    return items.map((item, index) => {
-      if (!item) return <></>;
-      const portfolioItem = JSON.parse(item) as PortfolioItemInterface;
-      return (
-        <PortfolioItem
-          key={`portfolio-list-item-${index}`}
-          index={index}
-          portfolioItem={portfolioItem}
-          hoveringItem={hoveringItem}
-          setHoveringItem={setHoveringItem}
-          setActiveItem={changeProject}
-        />
-      );
-    });
+    return portfolioItems.map((portfolioItem, index) => (
+      <PortfolioItem
+        key={`portfolio-list-item-${index}`}
+        index={index}
+        portfolioItem={portfolioItem}
+        hoveringItem={hoveringItem}
+        setHoveringItem={setHoveringItem}
+        setActiveItem={changeProject}
+      />
+    ));
   };
 
   const { width, height } = windowDimensions;
@@ -166,7 +158,7 @@ function MobilePortfolio() {
                   >
                     {activeItem && <PreviewOverlay project={activeItem} />}
                     <MobilePreviewImg
-                      src={require(`../../assets/images/portfolio/${activeItem.mobileImgSrc}`)}
+                      src={portfolioImages[`../../assets/images/portfolio/${activeItem.mobileImgSrc}`]?.default}
                       alt="Preview of the project being hovered"
                       loading="lazy"
                       heightLessThanWidth={height < width}

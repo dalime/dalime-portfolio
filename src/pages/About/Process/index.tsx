@@ -422,8 +422,8 @@ function Process() {
                 <Button
                   className="pulse"
                   onClick={() =>
-                    process.env.REACT_APP_CALL_LINK
-                      ? navigateToUrl(process.env.REACT_APP_CALL_LINK)
+                    import.meta.env.VITE_CALL_LINK
+                      ? navigateToUrl(import.meta.env.VITE_CALL_LINK)
                       : {}
                   }
                   sx={{ padding: 2, marginBottom: 4, marginTop: 4 }}

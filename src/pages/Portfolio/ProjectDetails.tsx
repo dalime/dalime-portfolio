@@ -162,8 +162,8 @@ function ProjectDetails({ project, isMobile }: Props) {
         variant="contained"
         color="primary"
         onClick={() =>
-          process.env.REACT_APP_CALL_LINK
-            ? navigateToUrl(process.env.REACT_APP_CALL_LINK)
+          import.meta.env.VITE_CALL_LINK
+            ? navigateToUrl(import.meta.env.VITE_CALL_LINK)
             : {}
         }
         sx={isMobile ? { fontSize: 12 } : {}}

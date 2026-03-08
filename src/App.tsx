@@ -12,9 +12,6 @@ import Portfolio from "./pages/Portfolio";
 import About from "./pages/About";
 // import Blog from "./pages/Blog";
 
-// Components
-// import { MusicPlayer } from "./components";
-
 const darkTheme = createTheme({
   palette: {
     mode: "dark",
@@ -60,7 +57,6 @@ function App() {
       <ThemeProvider theme={darkTheme}>
         <CssBaseline />
         <RouterProvider router={router} />
-        {/* <MusicPlayer /> */}
       </ThemeProvider>
     </RecoilRoot>
   );

@@ -63,8 +63,8 @@ function PreviewOverlay({ project }: Props) {
             fontSize: isMobile ? 11 : "auto",
           }}
           onClick={() =>
-            process.env.REACT_APP_CALL_LINK
-              ? navigateToUrl(process.env.REACT_APP_CALL_LINK)
+            import.meta.env.VITE_CALL_LINK
+              ? navigateToUrl(import.meta.env.VITE_CALL_LINK)
               : {}
           }
         >

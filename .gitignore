@@ -8,3 +8,11 @@ node_modules
 nohup.out
 .DS_Store
 */.DS_Store
+
+# VS Code
+.vscode
+**/.vscode
+
+# Build
+build
+dist

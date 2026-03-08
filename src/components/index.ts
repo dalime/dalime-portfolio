@@ -3,7 +3,6 @@ import Background from "./Background";
 import ContactForm from "./ContactForm";
 import HeaderMenu from "./HeaderMenu";
 import MobileMenu from "./MobileMenu";
-import MusicPlayer from "./MusicPlayer";
 import Page from "./Page";
 import PersonalLife from "../pages/About/PersonalLife";
 import PortfolioItem from "./PortfolioItem";
@@ -17,7 +16,6 @@ export {
   ContactForm,
   HeaderMenu,
   MobileMenu,
-  MusicPlayer,
   Page,
   PersonalLife,
   PortfolioItem,

@@ -123,8 +123,8 @@ function Step7({ deviceHeight }: BaseProps) {
               fontSize: mobile ? (deviceHeight < 560 ? 9 : 11) : "auto",
             }}
             onClick={() =>
-              process.env.REACT_APP_CALL_LINK
-                ? navigateToUrl(process.env.REACT_APP_CALL_LINK)
+              import.meta.env.VITE_CALL_LINK
+                ? navigateToUrl(import.meta.env.VITE_CALL_LINK)
                 : {}
             }
           >

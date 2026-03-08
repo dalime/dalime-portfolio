@@ -54,8 +54,8 @@ function HeroText({ mobile }: Props) {
         variant="contained"
         sx={{ marginTop: 4, padding: 2 }}
         onClick={() =>
-          process.env.REACT_APP_CALL_LINK
-            ? navigateToUrl(process.env.REACT_APP_CALL_LINK)
+          import.meta.env.VITE_CALL_LINK
+            ? navigateToUrl(import.meta.env.VITE_CALL_LINK)
             : {}
         }
         startIcon={<Code fontSize="large" />}
