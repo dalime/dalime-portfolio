@@ -1,18 +1,19 @@
-# Environment Variables
+# Environment Variables (Protecting your Shopify/API keys)
 .env
+.env.local
+.env.*.local
 
 # Dependencies
-node_modules
+node_modules/
 
-# Local Issues
-nohup.out
+# macOS Metadata
 .DS_Store
-*/.DS_Store
+**/.DS_Store
 
-# VS Code
-.vscode
-**/.vscode
+# VS Code (Blocks malicious tasks.json persistence)
+.vscode/
+**/.vscode/
 
-# Build
-build
-dist
+# Build outputs
+build/
+dist/
