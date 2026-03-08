@@ -103,7 +103,7 @@ function Resume() {
 
   return (
     <ResumeWrapper>
-      <Subheading sx={isTablet ? { fontSize: 30 } : {}}>Danny's Story</Subheading>
+      <Subheading sx={isTablet ? { fontSize: 30 } : {}}>Danny's Career</Subheading>
       {resumeItems.map((item, index) => (
         <ResumeListItem key={`resume-item-${index}`} item={item} />
       ))}
